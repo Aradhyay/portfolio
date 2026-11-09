@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aradhya Dwivedi | AI/ML Research Intern &amp; Web Developer</title>
+
+  <!-- Meta SEO -->
+  <meta name="description"
+    content="Portfolio of Aradhya Dwivedi - 2nd-Year B.Tech CSE student specializing in AI/ML, Computer Vision, Medical Image Processing (PyTorch, ResNet-18), and Full-Stack Web Development.">
+  <meta name="keywords"
+    content="Aradhya Dwivedi, Portfolio, AI ML, Deep Learning, Computer Vision, PyTorch, ResNet-18, MERN Stack, Web Scraping, Scrapy, CSJM University, Kanpur">
+  <meta name="author" content="Aradhya Dwivedi">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicon CDN for Crisp Tech Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ===================================================================
+         SIDEBAR: Profile Card & Quick Contacts
+         =================================================================== -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-header">
+        <div class="avatar-wrapper">
+          <img src="./assets/images/profile.jpeg" alt="Aradhya Dwivedi" id="profile-img">
+          <span class="status-badge" title="Open to Research &amp; Internship Opportunities"></span>
+        </div>
+
+        <div class="sidebar-title-box">
+          <h1 class="name">Aradhya Dwivedi</h1>
+          <span class="badge">AI/ML Research Intern</span>
+          <span class="sub-badge">B.Tech CSE • CSJM University</span>
+        </div>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button class="sidebar-toggle-btn" data-sidebar-btn aria-label="Toggle contacts drawer">
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Collapsible Container for Mobile -->
+      <div class="sidebar-collapsible">
+        <div class="sidebar-divider"></div>
+
+        <ul class="contacts-list">
+          <!-- Email -->
+          <li class="contact-item">
+            <div class="contact-icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-meta">
+              <p class="label">Email</p>
+              <a href="mailto:aradhy033@gmail.com" class="val">aradhy033@gmail.com</a>
+            </div>
+          </li>
+
+          <!-- Phone -->
+          <li class="contact-item">
+            <div class="contact-icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-meta">
+              <p class="label">Phone</p>
+              <a href="tel:+919005589778" class="val">+91 9005589778</a>
+            </div>
+          </li>
+
+          <!-- Location -->
+          <li class="contact-item">
+            <div class="contact-icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-meta">
+              <p class="label">Location</p>
+              <p class="val">Kanpur, Uttar Pradesh, India</p>
+            </div>
+          </li>
+
+          <!-- Degree & University -->
+          <li class="contact-item">
+            <div class="contact-icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <div class="contact-meta">
+              <p class="label">Education</p>
+              <p class="val">B.Tech CSE (2024–2028)</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Social Media Links -->
+        <ul class="socials-list">
+          <li>
+            <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer" class="social-link"
+              title="GitHub Profile">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/aradhya-dwivedi" target="_blank" rel="noopener noreferrer"
+              class="social-link" title="LinkedIn Profile">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:aradhy033@gmail.com" class="social-link" title="Send Email">
+              <ion-icon name="mail-unread-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" data-nav-btn="contact" class="social-link" title="Contact Form">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Download CV / Resume Button -->
+        <a href="./ARADHYA DWIVEDI.pdf" target="_blank" download="Aradhya_Dwivedi_Resume.pdf"
+          class="resume-btn-sidebar">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ===================================================================
+         MAIN CONTENT: Navigation Tabs & Tabbed Articles
+         =================================================================== -->
+    <main class="main-content">
+
+      <!-- Floating Glassmorphism Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-btn active" data-nav-btn="about">About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-btn" data-nav-btn="resume">Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-btn" data-nav-btn="portfolio">Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-btn" data-nav-btn="certificates">Certificates</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-btn" data-nav-btn="contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- =================================================================
+           TAB 1: ABOUT ME
+           ================================================================= -->
+      <article class="page-article active" data-article="about">
+        <header class="article-header">
+          <h2 class="article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello! I am <strong>Aradhya Dwivedi</strong>, a 2nd-year B.Tech Computer Science and Engineering student at
+            <strong>CSJM University</strong>, specializing in <strong>Computer Vision, Deep Learning</strong>, and
+            <strong>Full-Stack Web Development</strong>.
+          </p>
+          <p>
+            My core research passion lies in training neural architectures like <strong>PyTorch ResNet-18</strong> for
+            medical applications—such as automated pneumonia detection from chest X-rays—and designing robust,
+            crash-proof <strong>cross-language pipelines</strong> that integrate high-performance Python inference
+            workers with thread-safe Java Swing desktop interfaces via <span
+              class="highlight-tag">ProcessBuilder</span>.
+          </p>
+          <p>
+            Alongside AI/ML, I engineer automated data extraction engines using <strong>Python &amp; Scrapy</strong>,
+            build modern web apps using the <strong>MERN Stack (MongoDB, Express, React, Node.js)</strong>, and leverage
+            high-performance workstation computing (Dell Precision 5820) to solve real-world engineering challenges.
+          </p>
+        </section>
+
+        <!-- Stats Overview Banner -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Core Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5K+</span>
+            <span class="stat-label">X-Rays Analyzed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1K+</span>
+            <span class="stat-label">Data Items ETL'd</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Internships &amp; Certs</span>
+          </div>
+        </div>
+
+        <!-- Section: What I'm Doing -->
+        <h3 class="section-subtitle">What I'm Doing</h3>
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./assets/images/icon-vision.svg" alt="Computer Vision">
+            </div>
+            <div class="service-content">
+              <h4 class="service-title">Computer Vision &amp; Deep Learning</h4>
+              <p class="service-text">
+                Training PyTorch architectures (ResNet-18) for medical diagnostics, image augmentation, pattern
+                classification, and transfer learning benchmarks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./assets/images/icon-web.svg" alt="Web Development">
+            </div>
+            <div class="service-content">
+              <h4 class="service-title">Full-Stack Web Development</h4>
+              <p class="service-text">
+                Designing fast, responsive web applications using the MERN stack (MongoDB, Express, React, Node.js) with
+                secure authentication and modern UI/UX.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./assets/images/icon-etl.svg" alt="Data Pipelines">
+            </div>
+            <div class="service-content">
+              <h4 class="service-title">Data Extraction &amp; ETL Pipelines</h4>
+              <p class="service-text">
+                Building scalable web scrapers with Scrapy, user-agent/proxy rotation, automated data cleaning, and
+                structured MySQL/JSON persistent storage.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./assets/images/icon-system.svg" alt="System Architecture">
+            </div>
+            <div class="service-content">
+              <h4 class="service-title">Cross-Language &amp; Workstation Systems</h4>
+              <p class="service-text">
+                Connecting Python AI backends with Java GUIs using ProcessBuilder IPC, implementing crash-proofing, and
+                preventing RAM leaks during heavy workloads.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Tech Stack Badges -->
+        <h3 class="section-subtitle">Technologies &amp; Tools</h3>
+        <div class="tech-cloud">
+          <span class="tech-pill"><i class="devicon-python-plain colored"></i> Python</span>
+          <span class="tech-pill"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+          <span class="tech-pill"><i class="devicon-java-plain colored"></i> Java</span>
+          <span class="tech-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="tech-pill"><i class="devicon-react-original colored"></i> React.js</span>
+          <span class="tech-pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+          <span class="tech-pill"><i class="devicon-express-original"></i> Express.js</span>
+          <span class="tech-pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+          <span class="tech-pill"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+          <span class="tech-pill"><i class="devicon-cplusplus-plain colored"></i> C / C++</span>
+          <span class="tech-pill"><i class="devicon-git-plain colored"></i> Git &amp; GitHub</span>
+          <span class="tech-pill"><i class="devicon-linux-plain"></i> Linux &amp; Shell</span>
+          <span class="tech-pill"><i class="devicon-latex-original"></i> LaTeX</span>
+          <span class="tech-pill"><i class="devicon-html5-plain colored"></i> HTML5 / CSS3</span>
+        </div>
+      </article>
+
+      <!-- =================================================================
+           TAB 2: RESUME (Education, Experience & Skills)
+           ================================================================= -->
+      <article class="page-article" data-article="resume">
+        <header class="article-header">
+          <h2 class="article-title">Resume</h2>
+        </header>
+
+        <!-- Education Section -->
+        <section class="timeline-section">
+          <div class="timeline-title-wrapper">
+            <div class="timeline-icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="timeline-section-title">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-header">
+                <h4 class="timeline-item-title">Bachelor of Technology (B.Tech) - Computer Science &amp; Engineering
+                </h4>
+                <span class="timeline-period">2024 — 2028</span>
+              </div>
+              <p class="timeline-org">Chhatrapati Shahu Ji Maharaj (CSJM) University, Kanpur</p>
+              <div class="timeline-desc">
+                <p>Currently in 2nd Year. Specializing in Artificial Intelligence, Deep Learning, and Computer Vision.
+                </p>
+                <ul>
+                  <li><strong>Core Coursework:</strong> Data Structures &amp; Algorithms, Linear Algebra, Probability
+                    &amp; Statistics, Machine Learning, Object-Oriented Programming (Java), Database Management Systems.
+                  </li>
+                  <li><strong>Research Focus:</strong> Deep learning architectures for biomedical imaging and
+                    high-throughput cross-platform software systems.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Experience & Internships Section -->
+        <section class="timeline-section">
+          <div class="timeline-title-wrapper">
+            <div class="timeline-icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="timeline-section-title">Experience &amp; Internships</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <!-- Item 1 -->
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-header">
+                <h4 class="timeline-item-title">Full Stack Web Development Intern (MERN)</h4>
+                <span class="timeline-period">2025</span>
+              </div>
+              <p class="timeline-org">Edunet Foundation • In Collaboration with EY GDS &amp; AICTE</p>
+              <div class="timeline-desc">
+                <p>Selected for the competitive EY GDS Next Gen Internship focusing on full-stack web applications.</p>
+                <ul>
+                  <li>Trained on industry standard UI/UX design principles, responsive web architecture, and cloud
+                    full-stack patterns.</li>
+                  <li>Architected dynamic frontends and scalable REST APIs using React, Node.js, Express, and MongoDB.
+                  </li>
+                  <li>Presented capstone project before EY industry subject-matter experts and evaluated on code
+                    quality, scalability, and security.</li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-header">
+                <h4 class="timeline-item-title">AI / ML Research Intern &amp; Developer</h4>
+                <span class="timeline-period">2024 — Present</span>
+              </div>
+              <p class="timeline-org">Autonomous / Academic Research</p>
+              <div class="timeline-desc">
+                <p>Leading deep learning research and high-performance computing implementations.</p>
+                <ul>
+                  <li>Designed and evaluated ResNet-18 convolutional neural networks on chest radiography datasets for
+                    disease classification.</li>
+                  <li>Engineered cross-language IPC systems connecting Python AI inference backends with Java Swing
+                    interfaces.</li>
+                  <li>Utilized Dell Precision 5820 high-performance workstation hardware acceleration for heavy batch
+                    compute and data mining.</li>
+                  <li>Documented formal research methodologies and mathematical formulations using LaTeX.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Skills Progress Bars Section -->
+        <section class="timeline-section">
+          <div class="timeline-title-wrapper">
+            <div class="timeline-icon-box">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <h3 class="timeline-section-title">Technical Proficiency</h3>
+          </div>
+
+          <div class="skills-progress-list">
+            <!-- Skill 1 -->
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span class="skill-title">Python &amp; PyTorch (Deep Learning)</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-fill="92%"></div>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span class="skill-title">Computer Vision &amp; Medical Imaging</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-fill="88%"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span class="skill-title">Java &amp; Cross-Language Architecture</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-fill="85%"></div>
+              </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span class="skill-title">Web Scraping &amp; ETL (Scrapy)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-fill="90%"></div>
+              </div>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span class="skill-title">Full-Stack MERN (React, Node, Express, MongoDB)</span>
+                <span class="skill-percent">84%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-fill="84%"></div>
+              </div>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="skill-progress-item">
+              <div class="skill-info">
+                <span class="skill-title">Data Structures &amp; Algorithms</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-fill="82%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- =================================================================
+           TAB 3: PORTFOLIO (Featured Projects)
+           ================================================================= -->
+      <article class="page-article" data-article="portfolio">
+        <header class="article-header">
+          <h2 class="article-title">Featured Projects</h2>
+        </header>
+
+        <!-- Category Filters -->
+        <ul class="filter-tabs">
+          <li><button class="filter-btn active" data-filter-btn="all">All</button></li>
+          <li><button class="filter-btn" data-filter-btn="ai">AI &amp; Deep Learning</button></li>
+          <li><button class="filter-btn" data-filter-btn="web">Web Development</button></li>
+          <li><button class="filter-btn" data-filter-btn="data">Data &amp; Scraping</button></li>
+          <li><button class="filter-btn" data-filter-btn="system">Cross-Platform</button></li>
+        </ul>
+
+        <!-- Mobile Filter Select Dropdown -->
+        <div class="filter-select-box">
+          <select class="filter-select" data-filter-select aria-label="Filter projects by category">
+            <option value="all">All Categories</option>
+            <option value="ai">AI &amp; Deep Learning</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data &amp; Scraping</option>
+            <option value="system">Cross-Platform</option>
+          </select>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Pneumonia Detection System -->
+          <div class="project-card" data-project-card data-category="ai system">
+            <div class="project-banner">
+              <img src="./assets/images/project-pneumonia.svg" alt="Pneumonia Detection System">
+              <div class="project-overlay">
+                <button class="overlay-action-btn" data-open-modal="pneumonia" title="View Project Details">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+                <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer"
+                  class="overlay-action-btn secondary" title="View GitHub Repository">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category-tag">AI &amp; Medical Computer Vision</span>
+              <h4 class="project-title">Pneumonia Detection AI System</h4>
+              <p class="project-desc">
+                Engineered a deep learning-based diagnostic system using PyTorch and ResNet-18 on 5,000+ chest X-rays.
+                Bridged with a Java Swing GUI via ProcessBuilder with zero RAM leaks.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PyTorch</span>
+                <span class="project-tag">ResNet-18</span>
+                <span class="project-tag">Java Swing</span>
+                <span class="project-tag">ProcessBuilder</span>
+                <span class="project-tag">LaTeX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Scrapy Data Engine -->
+          <div class="project-card" data-project-card data-category="data ai">
+            <div class="project-banner">
+              <img src="./assets/images/project-scrapy.svg" alt="Automated Web Extraction Engine">
+              <div class="project-overlay">
+                <button class="overlay-action-btn" data-open-modal="scrapy" title="View Project Details">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+                <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer"
+                  class="overlay-action-btn secondary" title="View GitHub Repository">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category-tag">Data Engineering &amp; Scraping</span>
+              <h4 class="project-title">Automated Web Extraction Engine &amp; ETL</h4>
+              <p class="project-desc">
+                Scalable web extraction pipeline built with Python Scrapy. Features custom spiders, user-agent/proxy
+                rotation, anti-bot bypass, and automated cleaning for 1,000+ products into MySQL/JSON.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Scrapy</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">ETL</span>
+                <span class="project-tag">Anti-Bot</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: MERN Full Stack App -->
+          <div class="project-card" data-project-card data-category="web">
+            <div class="project-banner">
+              <img src="./assets/images/project-mern.svg" alt="MERN Cloud Platform">
+              <div class="project-overlay">
+                <button class="overlay-action-btn" data-open-modal="mern" title="View Project Details">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+                <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer"
+                  class="overlay-action-btn secondary" title="View GitHub Repository">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category-tag">Web Development</span>
+              <h4 class="project-title">MERN Full-Stack Cloud Application</h4>
+              <p class="project-desc">
+                Full-stack web application developed during the EY GDS &amp; AICTE Edunet Foundation internship.
+                Implements modular React components, RESTful Node/Express endpoints, and MongoDB persistence.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React 18</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: High Performance Workstation Compute -->
+          <div class="project-card" data-project-card data-category="system ai">
+            <div class="project-banner">
+              <img src="./assets/images/project-workstation.svg" alt="Workstation Compute Pipeline">
+              <div class="project-overlay">
+                <button class="overlay-action-btn" data-open-modal="workstation" title="View Project Details">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+                <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer"
+                  class="overlay-action-btn secondary" title="View GitHub Repository">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category-tag">Cross-Language Systems</span>
+              <h4 class="project-title">Workstation Compute &amp; GUI Architecture</h4>
+              <p class="project-desc">
+                High-performance computing pipeline taking advantage of Dell Precision 5820 hardware acceleration.
+                Implemented robust crash-proofing, multithreading, and memory leak prevention.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Java Swing</span>
+                <span class="project-tag">Python IPC</span>
+                <span class="project-tag">Dell Precision</span>
+                <span class="project-tag">Memory Management</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- =================================================================
+           TAB 4: CERTIFICATES & CREDENTIALS
+           ================================================================= -->
+      <article class="page-article" data-article="certificates">
+        <header class="article-header">
+          <h2 class="article-title">Certifications &amp; Credentials</h2>
+        </header>
+
+        <div class="certs-grid">
+          <!-- Cert 1: Corizo Certificate -->
+          <div class="cert-card">
+            <div class="cert-preview">
+              <img src="./Corizo Certificate.jpg" alt="Corizo Certificate Preview">
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Corizo</span>
+              <h4 class="cert-title">Technical Training &amp; Internship Certification</h4>
+              <p class="cert-date">Issued: 2025</p>
+              <button class="cert-cta" data-open-cert="./Corizo Certificate.jpg"
+                data-cert-title="Corizo Training &amp; Internship Certification">
+                <span>View Full Certificate</span>
+                <ion-icon name="open-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 2: Edunet Foundation / EY GDS & AICTE -->
+          <div class="cert-card">
+            <div class="cert-preview" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+              <div style="text-align: center; padding: 20px;">
+                <ion-icon name="ribbon-outline" style="font-size: 48px; color: #ffdb70;"></ion-icon>
+                <p style="color: #38bdf8; font-size: 13px; font-weight: 600; margin-top: 6px;">EY GDS &amp; AICTE •
+                  Edunet</p>
+              </div>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Edunet Foundation / EY GDS / AICTE</span>
+              <h4 class="cert-title">Full Stack Web Development with MERN</h4>
+              <p class="cert-date">AICTE ID: STU6783c478af5ee1736688760</p>
+              <a href="./Aradhya Dwivedi_offer_letter.pdf" target="_blank" class="cert-cta">
+                <span>View Official Offer Letter</span>
+                <ion-icon name="document-text-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 3: Academic AI/ML Research -->
+          <div class="cert-card">
+            <div class="cert-preview" style="background: linear-gradient(135deg, #1e1b4b, #0f172a);">
+              <div style="text-align: center; padding: 20px;">
+                <ion-icon name="school-outline" style="font-size: 48px; color: #a855f7;"></ion-icon>
+                <p style="color: #ffdb70; font-size: 13px; font-weight: 600; margin-top: 6px;">CSJM University</p>
+              </div>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">CSJM University</span>
+              <h4 class="cert-title">B.Tech Computer Science &amp; Engineering</h4>
+              <p class="cert-date">Session: 2024 — 2028</p>
+              <a href="./ARADHYA DWIVEDI.pdf" target="_blank" class="cert-cta">
+                <span>View Academic Profile</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- =================================================================
+           TAB 5: CONTACT ME
+           ================================================================= -->
+      <article class="page-article" data-article="contact">
+        <header class="article-header">
+          <h2 class="article-title">Contact Me</h2>
+        </header>
+
+        <div class="contact-container">
+
+          <!-- Interactive Location Map (Kanpur, Uttar Pradesh) -->
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114312.4411139493!2d80.26462747942721!3d26.44741279261328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Location Map - Kanpur, Uttar Pradesh">
+            </iframe>
+          </div>
+
+          <!-- Quick Connect Pills (Copy with 1-Click) -->
+          <div>
+            <h4 style="font-size: 15px; color: var(--text-white); margin-bottom: 10px;">Quick Connect</h4>
+            <div class="quick-connect-bar">
+              <button class="copy-btn" data-copy="aradhy033@gmail.com">
+                <ion-icon name="copy-outline"></ion-icon>
+                <span>Copy Email</span>
+              </button>
+              <button class="copy-btn" data-copy="+919005589778">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Copy Phone</span>
+              </button>
+              <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer" class="copy-btn"
+                style="text-decoration: none;">
+                <ion-icon name="logo-github"></ion-icon>
+                <span>GitHub Profile</span>
+              </a>
+              <a href="https://linkedin.com/in/aradhya-dwivedi" target="_blank" rel="noopener noreferrer"
+                class="copy-btn" style="text-decoration: none;">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <span>LinkedIn Profile</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Functional Contact Form -->
+          <div class="contact-form-box">
+            <h3 class="contact-form-title">Send a Message</h3>
+            <form class="contact-form" data-contact-form action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" name="fullname" class="form-control" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email Address" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="Subject / Opportunity">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" class="form-control" placeholder="Your Message..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span>Send Message</span>
+              </button>
+
+              <div class="form-status" data-form-status></div>
+            </form>
+          </div>
+
+        </div>
+      </article>
+
+    </main>
+
+  </div>
+
+  <!-- ===================================================================
+       MODAL: Interactive Project & Certificate Viewer
+       =================================================================== -->
+  <div class="modal-backdrop" data-modal-backdrop>
+    <div class="modal-box">
+      <button class="modal-close-btn" data-modal-close aria-label="Close modal">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <img src="./assets/images/project-pneumonia.svg" alt="Project preview" class="modal-img" data-modal-img>
+
+      <span class="modal-category" data-modal-category>AI &amp; Deep Learning</span>
+      <h3 class="modal-title" data-modal-title>Project Title</h3>
+
+      <div class="modal-body">
+        <p data-modal-desc>Project detailed description here...</p>
+        <ul class="modal-highlights" data-modal-highlights></ul>
+      </div>
+
+      <div class="modal-actions">
+        <a href="https://github.com/Aradhyay" target="_blank" rel="noopener noreferrer" class="modal-btn primary"
+          data-modal-github>
+          <ion-icon name="logo-github"></ion-icon>
+          <span>View Source Code</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="modal-btn secondary" data-modal-live
+          style="display:none;">
+          <ion-icon name="globe-outline"></ion-icon>
+          <span>Live Demo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for One-Click Copy -->
+  <div class="toast-msg" data-toast>Copied to clipboard!</div>
+
+  <!-- ===================================================================
+       SCRIPTS: Ionicons & Custom Logic
+       =================================================================== -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

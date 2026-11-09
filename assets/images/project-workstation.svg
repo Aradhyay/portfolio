@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="50%" stop-color="#18202f"/>
+      <stop offset="100%" stop-color="#0c1017"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="360" rx="16" fill="url(#wsBg)"/>
+
+  <!-- Title -->
+  <text x="300" y="38" font-family="'Poppins', sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">HIGH-PERFORMANCE COMPUTE &amp; GUI ARCHITECTURE</text>
+
+  <!-- Left: Java Swing UI Panel -->
+  <rect x="60" y="80" width="190" height="190" rx="12" fill="#131d2e" stroke="url(#amberGrad)" stroke-width="1.5"/>
+  <rect x="60" y="80" width="190" height="30" rx="12" fill="#1e293b"/>
+  <text x="155" y="100" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#fbbf24" text-anchor="middle">Java Swing UI (Thread-Safe)</text>
+  <rect x="75" y="125" width="160" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="85" y="141" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">UI State Controller</text>
+  <rect x="75" y="160" width="160" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="85" y="176" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">RAM Leak Prevention</text>
+  <rect x="75" y="195" width="160" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="85" y="211" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">Real-time Visualization</text>
+  <text x="155" y="250" font-family="'Poppins', sans-serif" font-size="9" fill="#fbbf24" text-anchor="middle">Crash-Proof Watchdog</text>
+
+  <!-- ProcessBuilder Bridge (Center) -->
+  <g transform="translate(265, 135)">
+    <rect width="70" height="80" rx="8" fill="#1e1e2d" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="35" y="28" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#60a5fa" text-anchor="middle">IPC</text>
+    <text x="35" y="44" font-family="'Poppins', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Process</text>
+    <text x="35" y="56" font-family="'Poppins', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Builder</text>
+    <text x="35" y="70" font-family="'Poppins', sans-serif" font-size="7" fill="#fbbf24" text-anchor="middle">Pipe I/O</text>
+  </g>
+
+  <!-- Connecting Stream Lines -->
+  <line x1="250" y1="175" x2="265" y2="175" stroke="#fbbf24" stroke-width="3" stroke-dasharray="4 2"/>
+  <line x1="335" y1="175" x2="350" y2="175" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4 2"/>
+
+  <!-- Right: Python Compute Engine -->
+  <rect x="350" y="80" width="190" height="190" rx="12" fill="#131d2e" stroke="url(#purpleGrad)" stroke-width="1.5"/>
+  <rect x="350" y="80" width="190" height="30" rx="12" fill="#1e293b"/>
+  <text x="445" y="100" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">Python ML Inference Worker</text>
+  <rect x="365" y="125" width="160" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="375" y="141" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">Dell Precision 5820</text>
+  <rect x="365" y="160" width="160" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="375" y="176" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">Hardware Acceleration</text>
+  <rect x="365" y="195" width="160" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="375" y="211" font-family="'Poppins', sans-serif" font-size="10" fill="#94a3b8">Asynchronous PyTorch</text>
+  <text x="445" y="250" font-family="'Poppins', sans-serif" font-size="9" fill="#c084fc" text-anchor="middle">Zero Memory Leaks</text>
+
+  <!-- Badges at bottom -->
+  <g transform="translate(130, 305)">
+    <rect width="110" height="26" rx="13" fill="#1e293b" stroke="url(#amberGrad)" stroke-width="1"/>
+    <text x="55" y="17" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#fbbf24" text-anchor="middle">Java &amp; Python</text>
+  </g>
+  <g transform="translate(260, 305)">
+    <rect width="120" height="26" rx="13" fill="#1e293b" stroke="#60a5fa" stroke-width="1"/>
+    <text x="60" y="17" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#60a5fa" text-anchor="middle">IPC Architecture</text>
+  </g>
+  <g transform="translate(400, 305)">
+    <rect width="100" height="26" rx="13" fill="#1e293b" stroke="url(#purpleGrad)" stroke-width="1"/>
+    <text x="50" y="17" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">HPC Compute</text>
+  </g>
+</svg>
